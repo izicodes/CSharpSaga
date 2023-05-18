@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../src/root.css" />
+    <link rel="stylesheet" href="hellovariable.css" />
+    <link rel="stylesheet" href="../../src/prism.css" />
+    <title>Hello, Variable! | CSharpSaga</title>
+  </head>
+  <body>
+    <i class="fas fa-arrow-up scroll-arrow" id="goUpIcon"></i>
+    <!-- <nav id="myNav">
+      <a href="../../index.html"><p class="nav-title">C# Saga</p></a>
+      <div class="menu-items">
+        <a href="../../index.html">Home</a>
+        <a href="#">Assignments</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <button
+        type="button"
+        id="hamburgerIcon"
+        title="menu button"
+        class="menu-button"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav> -->
+
+    <section class="header">
+      <a href="../../index.html" class="nav-title">C# Saga</a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li>
+            <a href="../../index.html" class="nav-title">C# Saga</a>
+          </li>
+          
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Assignments</a>
+          </li>
+          <li>
+            <a href="">Resources</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars hamburgerIcon"></i>
+      </div>
+    </section>
+
+    <main class="assignment-main">
+      <div class="contentWrapper a-main">
+        <section class="main-header">
+          <h1>Hello, Variable!</h1>
+          <div class="status-container">
+            <p>Status:</p>
+            <select
+              name="status-select"
+              id="status-select-group"
+              title="Select the assignment's status"
+            >
+              <option value="not-started">not started</option>
+              <option value="working">working</option>
+              <option value="completed">completed</option>
+            </select>
+          </div>
+          <div class="img-container">
+            <img src="../../images/post-images/helloword-post-img.png" alt="" />
+          </div>
+        </section>
+        <section class="introduction">
+          <h2>Introduction</h2>
+          <p class="intro">
+            The aim of this homework is to give you hands-on experience with the
+            basic syntax and data types in C#. You'll be creating a simple
+            program that gathers and displays information about a user.
+          </p>
+        </section>
+        <section class="example-output">
+          <h2>Example Output</h2>
+          <p>
+            Having examples can really help on giving you an ideas of what your
+            solution could output. If stuck, try achieving this example output:
+          </p>
+          <pre><code class="language-markup">Hello, what is your name? John Nice to meet you, John.
+How old are you? 25
+So, you are 25 years old. What is your favourite colour? Blue
+Interesting, your favourite colour is Blue.</code>
+</pre>
+        </section>
+        <section class="instuctions">
+          <h2>Instructions</h2>
+          <p>
+            Here are some instructions that you could follow to complete the
+            assignment:
+          </p>
+          <ol>
+            <li>
+              Write a program that asks the user for their name, age, and
+              favourite colour.
+            </li>
+            <li>
+              Store these inputs in the appropriate data types (string, int).
+            </li>
+            <li>Then, print the collected information back to the user.</li>
+            <li>
+              Remember to use good variable naming conventions and keep your
+              code clean.
+            </li>
+          </ol>
+        </section>
+        <section class="solution">
+          <h2>Compare with Solution</h2>
+          <p>All done? Compare your solution to mine!</p>
+          <details>
+            <summary>Click and see!</summary>
+            <pre class="line-numbers">
+  <code class="language-csharp">  using System;
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello, what is your name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Nice to meet you, " + name + ". How old are you?");
+            int age = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("So, you are " + age + " years old. What is your favourite colour?");
+            string color = Console.ReadLine();
+
+            Console.WriteLine("Interesting, your favourite colour is " + color + ".");
+        }
+    }</code>
+</pre>
+            <p>
+              *It's important to remember, this solution matches the example
+              solution given above. Also, there are many ways to achieve the
+              same output!
+            </p>
+          </details>
+        </section>
+        <a href="#">
+          <button type="button" class="btn">Browse Assignments</button>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Assignments</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-info">
+          <p>
+            Created by Isabelle "Loariya-Fiaba":
+            <a
+              href="https://xiacodes.tumblr.com/"
+              target="_blank"
+              rel="noopener"
+              >Blog</a
+            >
+            |
+            <a href="https://github.com/xiacodes" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+          </p>
+          <p>&copy; 2023 CSharpSaga. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../../src/assign.js"></script>
+    <script src="../../src/prism.js"></script>
+  </body>
+</html>

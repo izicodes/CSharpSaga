@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/root.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Home | CSharpSaga</title>
+  </head>
+  <body>
+    <i class="fas fa-arrow-up scroll-arrow" id="goUpIcon"></i>
+    <header>
+      <section class="header">
+        <a href="../../index.html" class="nav-title">C# Saga</a>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li>
+              <a href="../../index.html" class="nav-title">C# Saga</a>
+            </li>
+
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Assignments</a>
+            </li>
+            <li>
+              <a href="">Resources</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars hamburgerIcon"></i>
+        </div>
+      </section>
+      <section id="hero-section">
+        <div class="hero-text-container">
+          <h1>Test your C# Knowledge!</h1>
+          <p>
+            The ultimate resource for beginner programmers who are
+            self-studying! <span>No teacher to give you homework?</span> Explore
+            a diverse collection of captivating C# homework assignments designed
+            to test and enhance your coding skills!
+          </p>
+          <button class="btn" type="button" id="browseBtn">
+            Browse Assignments
+          </button>
+        </div>
+        <div class="hero-image-container">
+          <img src="images/header-girl-image.png" alt="" srcset="" />
+          <!-- <a href="https://storyset.com/education">Education illustrations by Storyset</a> -->
+        </div>
+        <i class="fa-solid fa-chevron-down" id="go-down-icon"></i>
+      </section>
+    </header>
+    <main>
+      <div class="contentWrapper">
+        <section id="featured-assignments">
+          <h2>Featured Homework Assignments</h2>
+          <p id="featured-text">
+            Unleash your coding potential with our handpicked selection of
+            featured homework assignments. <br />Each assignment is meticulously
+            designed to challenge and inspire beginner programmers like you.
+          </p>
+          <div class="assignment-cards">
+            <!-- CARD 1 -->
+            <div class="assignment-card">
+              <div class="image-container">
+                <img
+                  src="images/post-images/helloword-post-img.png"
+                  alt="Assignment 2"
+                />
+              </div>
+              <div class="assignment-card-body">
+                <h3 class="a-card-title">Hello, Variables!</h3>
+                <p class="a-card-text">
+                  A simple program that gathers and displays information about a
+                  user.
+                </p>
+                <hr class="card-divider" />
+                <a href="assignments/level1/hellovariable.html">
+                  <button type="button" class="btn a-card-btn">
+                    Let's start
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="assignment-card">
+              <div class="image-container">
+                <img src="images/post-images/post2.png" alt="Assignment 2" />
+              </div>
+              <div class="assignment-card-body">
+                <h3 class="a-card-title">Math Magician!</h3>
+                <p class="a-card-text">
+                  A program that uses these constructs to print a series of
+                  numbers and their squares.
+                </p>
+                <hr class="card-divider" />
+                <a href="#">
+                  <button type="button" class="btn a-card-btn">
+                    Let's start
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="assignment-card">
+              <div class="image-container">
+                <img src="images/post-images/post3.png" alt="Assignment 2" />
+              </div>
+              <div class="assignment-card-body">
+                <h3 class="a-card-title">Loop de Loop!</h3>
+                <p class="a-card-text">
+                  A calculator that can perform basic arithmetic operations.
+                </p>
+                <hr class="card-divider" />
+                <a href="#">
+                  <button type="button" class="btn a-card-btn">
+                    Let's start
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works-section">
+          <h2>How It Works</h2>
+          <div class="steps-container">
+            <div class="steps-card">
+              <div class="scard-icon">
+                <i class="fa-regular fa-compass"></i>
+              </div>
+              <div class="scard-body">
+                <h3 class="scard-title">Browse Assignments</h3>
+                <p class="scard-text">
+                  Explore the "Assignments" section to discover a wide range of
+                  C# homework assignments. Browse through the categories or
+                  featured assignments to find an exercise that interests you.
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-down"></i>
+            <div class="steps-card">
+              <div class="scard-icon">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="scard-body">
+                <h3 class="scard-title">Select an Assignment</h3>
+                <p class="scard-text">
+                  Click on an assignment that catches your attention. Read the
+                  assignment details, including the description and any specific
+                  requirements or constraints!
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-down"></i>
+            <div class="steps-card">
+              <div class="scard-icon">
+                <i class="fa-regular fa-file-code"></i>
+              </div>
+              <div class="scard-body">
+                <h3 class="scard-title">Work on the Solution</h3>
+                <p class="scard-text">
+                  Begin working on the assignment by applying your coding skills
+                  and knowledge of C#. Take your time and experiment with
+                  different approaches to solving the problem!
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-down"></i>
+            <div class="steps-card">
+              <div class="scard-icon">
+                <i class="fa-regular fa-handshake"></i>
+              </div>
+              <div class="scard-body">
+                <h3 class="scard-title">Compare Your Solution</h3>
+                <p class="scard-text">
+                  Once you've completed your solution, click on the "Compare
+                  with Solution" button to reveal our suggested answer. Analyze
+                  and learn from the provided solution to deepen your
+                  understanding!
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <button type="button" class="btn">Browse Assignments</button>
+          </a>
+        </section>
+        <section id="about-section">
+          <h2>About CSharp Saga</h2>
+          <div class="body-wrapper">
+            <div class="img-container">
+              <img
+                src="images/Logic-cuate.png"
+                alt="the csharp saga logo"
+                title="The C# Saga logo"
+              />
+            </div>
+            <div class="body-text">
+              <p>
+                Calling all self-studying C# programmers, welcome to CSharp
+                Saga! I understand the challenges of learning to code
+                independently, no teacher to give you good homework to complete
+                and learn from, which is why I've created a haven for beginner
+                programmers like you!
+              </p>
+              <p>
+                My mission is to provide a comprehensive resource for C#
+                homework assignments that will test your knowledge and
+                strengthen your C# coding skills. Whether you're at Level 1 or
+                Level 100+, my assignments will guide you through the
+                intricacies of C# programming, from the basics to more advanced
+                concepts!
+              </p>
+              <a href="#">
+                <button type="button" class="btn">Read more!</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <p>
+            Created by Isabelle "Loariya-Fiaba":
+            <a
+              href="https://xiacodes.tumblr.com/"
+              target="_blank"
+              rel="noopener"
+              >Blog</a
+            >
+            |
+            <a href="https://github.com/xiacodes" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+          </p>
+          <p>&copy; 2023 CSharpSaga. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/home.js"></script>
+  </body>
+</html>
