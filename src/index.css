@@ -36,6 +36,7 @@
   font-family: "Dela Gothic One", cursive;
   font-size: 2.5em;
   color: white;
+  text-align: center;
   text-shadow: -3px 3px 1px var(--leaf);
 }
 .hero-text-container p {
@@ -78,7 +79,8 @@
   transition: 400ms;
   cursor: pointer;
 }
-#go-down-icon:hover {
+#go-down-icon:hover,
+#go-down-icon:active {
   transform: translateX(-50%) translateY(20px);
 }
 
@@ -113,10 +115,10 @@ main {
   font-size: 2em;
   text-shadow: -3px 3px 1px var(--peony);
 }
-#featured-text {
+.featured-text {
   text-align: center;
   font-size: 1.1em;
-  margin: 25px 0;
+  margin: 15px 0;
 }
 
 /* ----------------------- */
@@ -294,7 +296,7 @@ main {
     gap: 25px;
   }
   .hero-text-container h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .hero-text-container p {
     font-size: 0.9em;
@@ -304,10 +306,36 @@ main {
     padding: 10px 13px;
     font-size: 0.9em;
   }
+
+  /* ------------- */
+  #featured-assignments {
+    height: 250vh;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  #featured-assignments h2:first-child {
+    font-size: 1.5em;
+  }
+  .featured-text {
+    text-align: center;
+    font-size: 17.6px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  /* --------------------- */
+  .assignment-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 55px;
+    margin: 30px 0;
+  }
 }
 
 /* Styles for screen sizes up to 600 pixels wide */
-@media (max-width: 660px) {
+@media (max-width: 850px) {
   #hero-section {
     display: grid;
     grid-template-areas:
@@ -318,8 +346,8 @@ main {
     grid-area: text;
     border-radius: 0px;
   }
-  .hero-image-container {
-    grid-area: picture;
+  .hero-image-container img {
+    width: 55%;
   }
   .hero-text-container h1 {
     text-align: center;
@@ -332,12 +360,60 @@ main {
   }
 
   /* ------------------ */
+  .contentWrapper {
+    width: 100%;
+  }
+
+  #featured-assignments,
+  #how-it-works-section {
+    height: 150vh;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  #featured-assignments h2:first-child {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .featured-text {
+    text-align: center;
+    font-size: 17.6px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  /* --------------------- */
+  .assignment-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 55px;
+    margin: 30px 0;
+  }
+
+  /* ----------------------- */
+  #how-it-works-section {
+    height: 120vh;
+  }
+  .steps-card {
+    width: 100%;
+  }
 }
 
 /* Styles for screen sizes between 601px and 900px */
 @media (min-width: 601px) and (max-width: 900px) {
+  .hero-text-container p {
+    width: 75%;
+  }
 }
 
 /* Styles for screen sizes above 900 pixels wide */
 @media (min-width: 901px) and (max-width: 1200px) {
+  .hero-text-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .hero-text-container p {
+    width: 75%;
+  }
 }
