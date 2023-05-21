@@ -64,9 +64,13 @@
   border: none;
   transition: 400ms;
 }
-#browseBtn:hover {
+#browseBtn:hover, #browseBtn:active, #how-it-works-section .btn:hover, #how-it-works-section .btn:active {
   letter-spacing: 2px;
   background-color: var(--honeydew);
+}
+#browseBtn > a {
+  text-decoration: none !important;
+  color: #292525 !important;
 }
 #go-down-icon {
   position: absolute;
