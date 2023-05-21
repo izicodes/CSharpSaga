@@ -90,7 +90,7 @@ select option:hover {
 }
 
 /* ------------------- */
-.instuctions > ol {
+.instuctions > ol, .helpful-links ul {
   margin-left: 40px;
   display: flex;
   flex-direction: column;
@@ -104,6 +104,19 @@ pre {
 details summary {
   font-weight: bold;
   color: var(--plum);
+  cursor: pointer;
+}
+
+/* --------------------- */
+.helpful-links ul a {
+  text-decoration: none;
+  color: var(--plum);
+  font-weight: bold;
+}
+.helpful-links ul a:hover, .helpful-links ul a:active {
+  text-decoration: underline;
+  color: var(--leaf);
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
@@ -125,7 +138,7 @@ details summary {
     font-size: 2em;
   }
   main p,
-  .instuctions ol > li {
+  .instuctions ol > li, .helpful-links ul > li, details summary {
     font-size: 0.9em;
   }
   .footer-container {
