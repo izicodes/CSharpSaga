@@ -93,7 +93,47 @@ h2 {
   border-radius: 20px;
 }
 .null {
-    background-color: #ccc !important;
-    color: var(--slate) !important;
-    cursor: not-allowed;
+  background-color: #ccc !important;
+  color: var(--slate) !important;
+  cursor: not-allowed;
+}
+
+/* MEDIA QUERIES */
+
+/* Styles for screen sizes up to 600 pixels wide */
+@media (max-width: 600px) {
+  .ah-2main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contentWrapper {
+    width: 100%;
+  }
+  .main-header {
+    background-color: var(--peony);
+    width: 100%;
+    border-radius: 20px;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding: 10px 0;
+    height: 100%;
+  }
+  .main-header h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  /* ---------------------------- */
+  .clips-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .clips-sec a {
+    font-size: 0.8em;
+    width: 90px;
+  }
 }
