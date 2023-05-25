@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="../../src/root.css" />
+		<link rel="stylesheet" href="assignments-styling.css" />
+		<link rel="stylesheet" href="../../src/prism.css" />
+		<title>Loop De Loop! | CSharpSaga</title>
+	</head>
+	<body>
+		<i class="fas fa-arrow-up scroll-arrow" id="goUpIcon"></i>
+		<section class="header">
+			<a href="../../index.html" class="nav-title">C# Saga</a>
+			<nav class="navbar">
+				<ul class="nav-menu">
+					<li>
+						<a href="../../index.html" class="nav-title">C# Saga</a>
+					</li>
+
+					<li>
+						<a href="../../index.html">Home</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="../assignments.html">Assignments</a>
+					</li>
+					<li>
+						<a href="">Resources</a>
+					</li>
+					<li>
+						<a href="">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="hamburger">
+				<i class="fa-solid fa-bars hamburgerIcon"></i>
+			</div>
+		</section>
+
+		<main class="assignment-main">
+			<div class="contentWrapper a-main">
+				<section class="main-header">
+					<h1>Loop De Loop!</h1>
+					<div class="status-container">
+						<p>Status:</p>
+						<select name="status-select" id="status-select-group" title="Select the assignment's status">
+							<option value="not-started">not started</option>
+							<option value="working">working</option>
+							<option value="completed">completed</option>
+						</select>
+					</div>
+					<div class="img-container">
+						<img src="../../images/post-images/post2.png" alt="Loop De Loop header image" />
+					</div>
+				</section>
+				<section class="introduction">
+					<h2>Introduction</h2>
+					<p class="intro">Control structures and loops are fundamental to any programming language. In this assignment, you'll be creating a program that uses these constructs to print a series of numbers and their squares.</p>
+				</section>
+				<section class="example-output">
+					<h2>Example Output</h2>
+					<p>Having examples can really help on giving you an ideas of what your solution could output. If stuck, try achieving this example output:</p>
+					<pre><code class="language-markup">Please enter a number: 5
+1 square is 1
+2 square is 4
+3 square is 9
+4 square is 16
+5 square is 25</code>
+</pre>
+				</section>
+				<section class="instuctions">
+					<h2>Instructions</h2>
+					<p>Here are some instructions that you could follow to complete the assignment:</p>
+					<ol>
+						<li>Write a program that asks the user to input a number.</li>
+						<li>Using a loop, print all numbers from 1 up to and including the input number, along with the square of each number.</li>
+						<li>Use an appropriate control structure to ensure that the input number is positive.</li>
+						<li>Think about the loop control structure that would be most appropriate for this task.</li>
+					</ol>
+				</section>
+				<section class="helpful-links">
+					<h2>Helpful Links</h2>
+					<p>Need a bit of help? Check out these links on the topic:</p>
+					<ul>
+						<li>
+							<a href="https://www.csharptutorial.net/csharp-tutorial/csharp-if/" target="_blank" rel="noopener noreferrer" title="C# Tutorial - C# If statement"> C# Tutorial - C# If statement </a>
+						</li>
+						<li>
+							<a href="https://www.tutorialspoint.com/csharp/csharp_loops.htm" target="_blank" rel="noopener noreferrer" title="TutorialPoint - C# Loops"> TutorialPoint - C# Loops </a>
+						</li>
+						<li>
+							<a href="https://www.tutorialspoint.com/csharp/csharp_decision_making.htm" target="_blank" rel="noopener noreferrer" title="TutorialPoint - C# Decision Making"> TutorialPoint - C# Decision Making </a>
+						</li>
+						<li>
+							<a href="https://www.w3schools.com/cs/cs_for_loop.php" target="_blank" rel="noopener noreferrer" title="W3School - C# For Loop"> W3School - C# For Loop </a>
+						</li>
+					</ul>
+				</section>
+				<section class="solution">
+					<h2>Compare with Solution</h2>
+					<p>All done? Compare your solution to mine!</p>
+					<details>
+						<summary>Click and see!</summary>
+						<pre class="line-numbers"><code class="language-csharp">using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Please enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        // Check if the number is positive
+        while (number <= 0)
+        {
+            Console.WriteLine("Invalid input. Please enter a positive number: ");
+            number = int.Parse(Console.ReadLine());
+        }
+
+        // Print numbers and their squares
+        for (int i = 1; i <= number; i++)
+        {
+            int square = i * i;
+            Console.WriteLine($"{i} square is {square}");
+        }
+    }
+ }</code>
+</pre>
+						<p>*It's important to remember, this solution matches the example solution given above. Also, there are many ways to achieve the same output!</p>
+					</details>
+				</section>
+				<a href="#">
+					<button type="button" class="btn">Browse Assignments</button>
+				</a>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<p>
+						Created by Isabelle "Loariya-Fiaba":
+						<a href="https://xiacodes.tumblr.com/" target="_blank" rel="noopener">Blog</a>
+						|
+						<a href="https://github.com/xiacodes" target="_blank" rel="noopener">GitHub</a>
+					</p>
+					<p>&copy; 2023 CSharpSaga. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="../../src/assign.js"></script>
+		<script src="../../src/prism.js"></script>
+	</body>
+</html>
