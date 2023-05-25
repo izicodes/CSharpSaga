@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="../../src/root.css" />
+		<link rel="stylesheet" href="assignments-styling.css" />
+		<link rel="stylesheet" href="../../src/prism.css" />
+		<title>Math Magician! | CSharpSaga</title>
+	</head>
+	<body>
+		<i class="fas fa-arrow-up scroll-arrow" id="goUpIcon"></i>
+		<section class="header">
+			<a href="../../index.html" class="nav-title">C# Saga</a>
+			<nav class="navbar">
+				<ul class="nav-menu">
+					<li>
+						<a href="../../index.html" class="nav-title">C# Saga</a>
+					</li>
+
+					<li>
+						<a href="../../index.html">Home</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="../assignments.html">Assignments</a>
+					</li>
+					<li>
+						<a href="">Resources</a>
+					</li>
+					<li>
+						<a href="">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="hamburger">
+				<i class="fa-solid fa-bars hamburgerIcon"></i>
+			</div>
+		</section>
+
+		<main class="assignment-main">
+			<div class="contentWrapper a-main">
+				<section class="main-header">
+					<h1>Math Magician!</h1>
+					<div class="status-container">
+						<p>Status:</p>
+						<select name="status-select" id="status-select-group" title="Select the assignment's status">
+							<option value="not-started">not started</option>
+							<option value="working">working</option>
+							<option value="completed">completed</option>
+						</select>
+					</div>
+					<div class="img-container">
+						<img src="../../images/post-images/post3.png" alt="Loop De Loop header image" />
+					</div>
+				</section>
+				<section class="introduction">
+					<h2>Introduction</h2>
+					<p class="intro">This assignment will have you putting C#'s operators to work. You'll be creating a calculator that can perform basic arithmetic operations.</p>
+				</section>
+				<section class="example-output">
+					<h2>Example Output</h2>
+					<p>Having examples can really help on giving you an ideas of what your solution could output. If stuck, try achieving this example output:</p>
+					<pre><code class="language-markup">Enter the first number: 10
+Enter the second number: 2
+Choose operation: +, -, *, / : *
+The result of the operation is 20.</code>
+</pre>
+				</section>
+				<section class="instuctions">
+					<h2>Instructions</h2>
+					<p>Here are some instructions that you could follow to complete the assignment:</p>
+					<ol>
+						<li>Write a program that prompts the user to input two numbers.</li>
+						<li>Ask the user to choose an operation from the following: addition, subtraction, multiplication, or division.</li>
+						<li>Perform the chosen operation on the two numbers and print the result.</li>
+						<li>Ensure you handle the case where a user might try to divide by zero.</li>
+					</ol>
+				</section>
+				<section class="helpful-links">
+					<h2>Helpful Links</h2>
+					<p>Need a bit of help? Check out these links on the topic:</p>
+					<ul>
+						<li>
+							<a href="https://www.w3schools.com/cs/cs_user_input.php" target="_blank" rel="noopener noreferrer" title="W3School - C# User Input"> W3School - C# User Input </a>
+						</li>
+						<li>
+							<a href="https://www.tutorialspoint.com/csharp/csharp_operators.htm" target="_blank" rel="noopener noreferrer" title="TutorialPoint - C# Operators"> TutorialPoint - C# Operators </a>
+						</li>
+						<li>
+							<a href="https://www.tutorialspoint.com/csharp/csharp_type_conversion.htm" target="_blank" rel="noopener noreferrer" title="TutorialPoint - C# Type Conversion"> TutorialPoint - C# Type Conversion</a>
+						</li>
+						<li>
+							<a href="https://www.w3schools.com/cs/cs_switch.php" target="_blank" rel="noopener noreferrer" title="W3School - C# Switch"> W3School - C# Switch</a>
+						</li>
+					</ul>
+				</section>
+				<section class="solution">
+					<h2>Compare with Solution</h2>
+					<p>All done? Compare your solution to mine!</p>
+					<details>
+						<summary>Click and see!</summary>
+						<pre class="line-numbers"><code class="language-csharp">using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Enter the first number: ");
+        double firstNumber = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        double secondNumber = double.Parse(Console.ReadLine());
+
+        Console.Write("Choose operation: +, -, *, / : ");
+        char operation = char.Parse(Console.ReadLine());
+
+        double result = 0;
+
+        switch (operation)
+        {
+            case '+':
+                result = firstNumber + secondNumber;
+                break;
+            case '-':
+                result = firstNumber - secondNumber;
+                break;
+            case '*':
+                result = firstNumber * secondNumber;
+                break;
+            case '/':
+                if (secondNumber != 0)
+                {
+                    result = firstNumber / secondNumber;
+                }
+                else
+                {
+                    Console.WriteLine("Error: Division by zero is not allowed.");
+                    return;
+                }
+                break;
+            default:
+                Console.WriteLine("Error: Invalid operation selected.");
+                return;
+        }
+
+        Console.WriteLine("The result of the operation is " + result + ".");
+    }
+}</code>
+</pre>
+						<p>*It's important to remember, this solution matches the example solution given above. Also, there are many ways to achieve the same output!</p>
+					</details>
+				</section>
+				<a href="#">
+					<button type="button" class="btn">Browse Assignments</button>
+				</a>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<p>
+						Created by Isabelle "Loariya-Fiaba":
+						<a href="https://xiacodes.tumblr.com/" target="_blank" rel="noopener">Blog</a>
+						|
+						<a href="https://github.com/xiacodes" target="_blank" rel="noopener">GitHub</a>
+					</p>
+					<p>&copy; 2023 CSharpSaga. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="../../src/assign.js"></script>
+		<script src="../../src/prism.js"></script>
+	</body>
+</html>
