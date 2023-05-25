@@ -1,177 +1,216 @@
 .assignment-main {
-  display: flex;
-  justify-content: center;
-  background-color: #e2f4e5;
-  background-image: url(../../images/grid.png);
-  height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #e2f4e5;
+	background-image: url(../../images/grid.png);
+	height: 100%;
 }
 .a-main {
-  background-color: white;
-  padding: 40px 60px 100px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  box-shadow: 5px 0 7px -5px #5f55554c, -5px 0 7px -5px #5f55554c;
+	background-color: white;
+	padding: 40px 60px 100px 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	box-shadow: 5px 0 7px -5px #5f55554c, -5px 0 7px -5px #5f55554c;
 }
 
 .a-main > a {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
 }
 
 /* ----------- */
 .main-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .status-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+	display: flex;
+	gap: 10px;
+	align-items: center;
 }
 .img-container {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .img-container img {
-  object-fit: cover;
+	object-fit: cover;
 }
 h1 {
-  font-family: "Dela Gothic One", cursive;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-align: center;
+	font-family: "Dela Gothic One", cursive;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	text-align: center;
 }
 h2 {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 main p,
 main li,
 main summary {
-  font-size: 17.6px;
+	font-size: 17.6px;
 }
 
 /* ----------------- */
 select {
-  font-family: "Karla", sans-serif;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 4px 0px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f7f7f7;
-  color: #333;
-  width: 100px;
-  text-align: center;
-  cursor: pointer;
+	font-family: "Karla", sans-serif;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 4px 0px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f7f7f7;
+	color: #333;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
 }
 select option:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .btn {
-  border-radius: 20px;
-  padding: 10px 13px;
-  font-size: 1em;
-  font-family: "Dela Gothic One", cursive;
-  background-color: var(--peony);
-  cursor: pointer;
-  border: none;
-  transition: 400ms;
+	border-radius: 20px;
+	padding: 10px 13px;
+	font-size: 1em;
+	font-family: "Dela Gothic One", cursive;
+	background-color: var(--peony);
+	cursor: pointer;
+	border: none;
+	transition: 400ms;
+	color: var(--black);
 }
 
 /* ------------------- */
-.instuctions > ol, .helpful-links ul {
-  margin-left: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
+.instuctions > ol,
+.helpful-links ul {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
 }
 details,
 pre {
-  margin-top: 10px !important;
+	margin-top: 10px !important;
 }
 details summary {
-  font-weight: bold;
-  color: var(--plum);
-  cursor: pointer;
+	font-weight: bold;
+	color: var(--plum);
+	cursor: pointer;
 }
 
 /* --------------------- */
 .helpful-links ul a {
-  text-decoration: none;
-  color: var(--plum);
-  font-weight: bold;
+	text-decoration: none;
+	color: var(--plum);
+	font-weight: bold;
 }
-.helpful-links ul a:hover, .helpful-links ul a:active {
-  text-decoration: underline;
-  color: var(--leaf);
-  font-weight: bold;
+.helpful-links ul a:hover,
+.helpful-links ul a:active {
+	text-decoration: underline;
+	color: var(--leaf);
+	font-weight: bold;
 }
 
 /* MEDIA QUERIES */
 
 /* Styles for screen sizes up to 600 pixels wide */
 @media (max-width: 600px) {
-  .a-main {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .img-container img {
-    object-fit: cover;
-    width: 100%;
-  }
-  .contentWrapper {
-    width: 100%;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  main p,
-  .instuctions ol > li, .helpful-links ul > li, details summary {
-    font-size: 0.9em;
-  }
-  .footer-container {
-    font-size: 0.7em;
-  }
-  #status-select-group,
-  .status-container > p {
-    font-size: 0.8em;
-  }
-  #status-select-group {
-    padding: 2px 0px;
-  }
-  pre > code.language-markup,
-  pre > code.language-csharp {
-    font-size: 0.8em !important;
-  }
+	.a-main {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.img-container img {
+		object-fit: cover;
+		width: 100%;
+	}
+	.contentWrapper {
+		width: 100%;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	main p,
+	.instuctions ol > li,
+	.helpful-links ul > li,
+	details summary {
+		font-size: 0.9em;
+	}
+	.footer-container {
+		font-size: 0.7em;
+	}
+	#status-select-group,
+	.status-container > p {
+		font-size: 0.8em;
+	}
+	#status-select-group {
+		padding: 2px 0px;
+	}
+	pre > code.language-markup,
+	pre > code.language-csharp {
+		font-size: 0.8em !important;
+	}
 }
 
 /* Styles for screen sizes between 601px and 900px */
 @media (min-width: 601px) and (max-width: 900px) {
-  .img-container img {
-    object-fit: cover;
-    width: 100%;
-  }
-  .contentWrapper {
-    width: 90%;
-  }
+	.img-container img {
+		object-fit: cover;
+		width: 100%;
+	}
+	.contentWrapper {
+		width: 90%;
+	}
 }
 
 /* Styles for screen sizes above 900 pixels wide */
 @media (min-width: 901px) and (max-width: 1200px) {
-  .img-container img {
-    object-fit: cover;
-    width: 100%;
-  }
+	.img-container img {
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+/* Styles for screen sizes above 900 pixels wide */
+@media (min-width: 1201px) and (max-width: 1600px) {
+	.img-container img {
+		object-fit: cover;
+		width: 50%;
+	}
+	.a-main {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.contentWrapper {
+		width: 80%;
+	}
+	h1 {
+		font-size: 1.7em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	main p,
+	.instuctions ol > li,
+	.helpful-links ul > li,
+	details summary {
+		font-size: 0.9em;
+	}
+	#status-select-group,
+	.status-container > p {
+		font-size: 0.8em;
+	}
+	#status-select-group {
+		padding: 2px 0px;
+	}
 }
